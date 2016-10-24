@@ -1,18 +1,78 @@
 extends layout
 
 
-block content
-  h1= title
-  p Welcome to #{title}
 
-  .grid-flex-container
+block homeContent
+  .flicker
+    ul
+      li(data-background="img/allproducts.jpg")
+        .flicker__content--center
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          a(href="").flicker__button.button.button-secondary.button-large.Pill-button Learn More
+      li(data-background="img/rejuv-large.jpg")
+        .flicker__content
+          h2.flicker__title Rejuvenating Cream
+          p Designed to help enhance, rejuvenate, firmness, uniformity of skin tone, hydration radiance, and tightness of skin to minimize appearance of fine lines and wrinkles on neck and face.
+          a(href="").flicker__button.button.button-primary.button-large.Pill-button Purchase
+          p $99.00 - 2.0 OZ
+      li(data-background="img/regen-large.jpg")
+        .flicker__content
+          h2.flicker__title Regenerating Cream
+          p Designed to help renew vitality, enhance regeneration, firmness, uniformity of skin tone, hydration, and radiance.
+          a(href="").flicker__button.button.button-primary.button-large.Pill-button Purchase
+          p $89.00 - 2.0 oz
+      li(data-background="img/eye-large.jpg")
+        .flicker__content
+          h2.flicker__title Eye Cream
+          p Eye renewal cream works to minimize puffiness, fine lines, wrinkles and dark circles, firms, tones skin.
+          a(href="").flicker__button.button.button-primary.button-large.Pill-button Purchase
+          p $69.00 - 0.5 OZ
 
-    .grid-flex-cell
-      h2 Column 1
-      p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium debitis ab, repellat, tempora a et beatae assumenda minus ea iusto. Maiores quos asperiores nam, minima soluta ab dolorem laborum. Cum.
 
-    .grid-flex-cell
-      h2 Column 2
+block aboutContent
+  .container
+    .Content-one-half
+      h2 About Sennobia
+      h3 Love Your Skin
+      p Sennobia was created for people like you. We provide you the essential ingredients to combat environmental (and other) factors that lead to our skin's abuse. Make Sennobia a part of your daily skin care regimen and you will notice the Sennobia difference. 
+      a(href="").button.button-secondary.button-large.Pill-button Request Free Trial
 
-      p.graph.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste, facilis officiis! Quisquam quidem at harum illum commodi modi obcaecati voluptate, ut magnam ipsam dolor, consequatur totam. Possimus, nulla sapiente nobis.
+
+block productsContent
+  .container
+    .Content-one-half
+      h2 Why Sennobia
+      h3 Our Products
+      p Our products are designed with you in mind. We pay close attention to the ingredients we use to ensure a rich and luxurious feel before and after use. We offer a full line of facial skin care products that will help maintain as well as rejuvenate your skin.
+
+
+block storeContent
+  .container.Text-center
+    .Breathing-room--small
+      h3 Our Store
+      p There is only you and your camera. The limitations in your photography are in yourself, for what we see is what we are.
+
+    .grid-flex-container
+      .Card.grid-flex-cell
+        .Card__image(style="background-image: url(img/regen-med.jpg)")
+        .Card__content
+          h2 Regenerating
+          p Renew vitality, enhance regeneration
+          p $89.00 - 2.0 OZ
+          a(href="").flicker__button.button.button-primary.button-large.Pill-button Purchase
+
+      .Card.grid-flex-cell
+        .Card__image(style="background-image: url(img/rejuv-med.jpg)")
+        .Card__content
+          h2 Rejuvenating
+          p Enhance firmness &amp; uniformity of skin.
+          p $99.00 - 2.0 OZ
+          a(href="").flicker__button.button.button-primary.button-large.Pill-button Purchase
+
+      .Card.grid-flex-cell
+        .Card__image(style="background-image: url(img/eye-med.jpg)")
+        .Card__content
+          h2 Eye
+          p Minimize puffiness, fine lines, & wrinkles.
+          p $69.00 - 0.5 OZ
+          a(href="").flicker__button.button.button-primary.button-large.Pill-button Purchase

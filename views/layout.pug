@@ -2,10 +2,40 @@ doctype html
 html
   head
     title= title
+    link(rel="stylesheet", href="/stylesheets/flickerplate.min.css")
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    .container
-      block content
+    .Top-navigation.cf
+      .container.cf
+        .grid-flex-container
+          .Brand.grid-flex-cell
+            a(href="#", title="Home").js-nav 
+              img(src="img/brand.svg", alt="Sennobia")
+          nav.Navigation.grid-flex-cell
+            ul.list-unstyled
+              li
+                a(href="#") About
+              li
+                a(href="") Products
+              li
+                a(href="") Contact
+
+    section.Home.no-spacing
+      block homeContent
+    
+    section.About
+      block aboutContent
+
+    section.Products
+      block productsContent
+
+    section.Store.small-spacing
+      block storeContent
+    
+    section.Contact
+      h2 this is the contact section
 
 
-
+    script(src="js/flickerplate.min.js")
+    script.
+      new flickerplate({ selector: '.flicker' });
