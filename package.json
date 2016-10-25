@@ -16,9 +16,5 @@
     "serve-favicon": "~2.3.0",
     "stylus": "^0.54.5",
     "yeticss": "^7.3.0"
-  },
-  "engines": {
-    "node": "4.5.0",
-    "npm": "2.15.9"
   }
 }

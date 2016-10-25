@@ -1,0 +1,23 @@
+section.Contact
+  .container
+      h2.text-center We love feedback
+      h3 Contact Us
+      form.Contact__form
+        .grid-flex-container
+          .grid-flex-cell
+            .form-element
+              label(for='name') Your Name
+              input(type='text', id='name', placeholder='Your name', class='form-input')
+          
+          .grid-flex-cell
+            .form-element
+              label(for='email') Your Email
+              input(type='text', id='email', placeholder='Your email', class='form-input')
+
+        .grid-flex-container
+          .grid-flex-cell
+            .form-element
+              label(for='comment') Write a comment
+              textarea(id='comment', class='form-input', placeholder='This is a sample message')
+
+        button(type='submit', class='button button-gold') Send
